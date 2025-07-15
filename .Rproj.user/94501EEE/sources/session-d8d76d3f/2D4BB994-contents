@@ -171,18 +171,18 @@ subset_data_oc <- subset(merged_data, COUNTY_2010SVI == "Orange County")
 summary(subset_data_oc[, 1:10], 6)
 
 #making the 2010 boxplot
-plot_oc_2010 <- ggplot(data = subset_data_oc, mapping =aes(x= COUNTY_2010SVI, y=upward_mobility_rate_2010)) + geom_boxplot() 
-print(plot_oc_2010)
+plot_oc_2010 <- ggplot(data = subset_data_oc, mapping =aes(y=upward_mobility_rate_2010)) + geom_boxplot() 
+print(plot_oc_2010) 
           
 #making the 2020 boxplot
-plot_oc_2020 <- ggplot(data = subset_data_oc, mapping =aes(x= COUNTY_2010SVI, y=upward_mobility_rate_2020)) + geom_boxplot() 
+plot_oc_2020 <- ggplot(data = subset_data_oc, mapping =aes(y=upward_mobility_rate_2020)) + geom_boxplot() 
 print(plot_oc_2020)
 
 #comparison between two years 
-The two years appear the same in both box plots
+#The two years appear the same in both box plots
 
 #outliers 
-#There are outliers in both data sets at approximately 17 
+#There are outliers in both data sets at approximately 17.5
 
 
 #saving the plots 
@@ -199,9 +199,9 @@ filtered_data <- subset_data_az
 #How many rows meet that condition?
 #363 rows meet that condition
 #Patterns in counties 
-#I observe no patterns in the counties, but the most common counties were Apache, Cochise, and Maricopa. 
+#I observe no patterns in the counties, but the most common #counties were Apache, Cochise, and Maricopa. 
 
 #REFLECTION
 #A question I would have included in this exercise would have been do hotter counties have lower mobility? 
-#A question I have after this assignment is what the box plots should have looked like in question two because I do not feel confident about my answers. 
+#A question I have after this assignment is what the box plots #should have looked like in question two because I do not feel #confident about my answers. 
 

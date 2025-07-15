@@ -63,7 +63,7 @@ setwd("path/to/your/folder")
 For example:
 
 ```r
-setwd("C:/Users/annab/OneDrive/UCSB/equityag_materials")
+setwd("C:/Users/annab/Desktop/EquityAg/equityag_materials")
 ```
 
 Next, let’s create some folders to organize your files. A good file organization is essential for reproducibility and workflow.
