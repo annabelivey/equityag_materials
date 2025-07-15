@@ -131,7 +131,7 @@ print(mobility_plot)
 ggsave(plot = mobility_plot, filename = "output/mobility-plot-2010.pdf")
 
 
-#STUDENT ACTIVITIES 
+#STUDENT ACTIVITY 1
 
 #Chosen county: Orange County 
 
@@ -148,17 +148,60 @@ print(orange_upward_mean_2020_ca <- mean(subset_data_ca$upward_mobility_rate_202
 #calculating and printing sd for Orange County 2020
 print(orange_upward_sd_2020_ca <- sd(subset_data_ca$upward_mobility_rate_2020[subset_data_ca$COUNTY_2010SVI == "Orange County"]))
 
-#comparison to 2010 California averages:
+#Orange county comparison to 2010 California averages:
 
-#Orange county mean (0.88) is lesser than  than California mean (0.90)
+#Orange county mean (0.8795) is lesser than  than California mean (0.8981)
 
-#Orange county sd (1.22) is greater than California sd (1.07)
+#Orange county sd (1.2160) is greater than California sd (1.0682)
 
 
 
-#Comparison to 2020 California averages 
+#Orange County Comparison to 2020 California averages 
 
-#Orange county mean vs California mean 
-#Orange county sd vs California sd 
+#Orange county mean (0.8794) is lesser than California mean (0.8980)
+#Orange county sd (1.2156) is greater than California sd (1.0675)
 
+#STUDENT ACTIVITY 2 
+#creating a boxplot for Orange County 2010 data 
+
+#creating a subset of data for only Orange County 
+subset_data_oc <- subset(merged_data, COUNTY_2010SVI == "Orange County")
+
+#summarizing the data 
+summary(subset_data_oc[, 1:10], 6)
+
+#making the 2010 boxplot
+plot_oc_2010 <- ggplot(data = subset_data_oc, mapping =aes(x= COUNTY_2010SVI, y=upward_mobility_rate_2010)) + geom_boxplot() 
+print(plot_oc_2010)
+          
+#making the 2020 boxplot
+plot_oc_2020 <- ggplot(data = subset_data_oc, mapping =aes(x= COUNTY_2010SVI, y=upward_mobility_rate_2020)) + geom_boxplot() 
+print(plot_oc_2020)
+
+#comparison between two years 
+The two years appear the same in both box plots
+
+#outliers 
+#There are outliers in both data sets at approximately 17 
+
+
+#saving the plots 
+ggsave(plot = plot_oc_2010, filename = "output/mobility-oc-2010.pdf")
+
+ggsave(plot = plot_oc_2020, filename = "output/mobility-oc-2020.pdf")
+
+
+#STUDENT ACTIVITY 3
+
+filtered_data <- filter(subset_data_az,upward_mobility_rate_2010>1)
+filtered_data <- subset_data_az 
+
+#How many rows meet that condition?
+#363 rows meet that condition
+#Patterns in counties 
+#I observe no patterns in the counties, but the most common counties were Apache, Cochise, and Maricopa. 
+
+#REFLECTION
+#A question I would have included in this exercise would have been do hotter counties have lower mobility? 
+#A question I have after this assignment is what the box plots should have looked like in question two because I do not feel confident about my answers. 
 
