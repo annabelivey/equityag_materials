@@ -3,9 +3,9 @@
     "path": "C:/Users/annab/OneDrive/UCSB/equityag_materials/Ivey_L1.Rmd",
     "project_path": "Ivey_L1.Rmd",
     "type": "r_markdown",
-    "hash": "2939219133",
+    "hash": "0",
     "contents": "",
-    "dirty": false,
+    "dirty": true,
     "created": 1752531051453.0,
     "source_on_save": false,
     "relative_order": 2,
@@ -13,15 +13,15 @@
         "tempName": "Untitled1",
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "161,35",
-        "scrollLine": "149"
+        "cursorPosition": "205,153",
+        "scrollLine": "194"
     },
     "folds": "",
     "lastKnownWriteTime": 1752536189,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1752536189480,
+    "last_content_update": 1752562943508,
     "read_only": false,
     "read_only_alternatives": []
 }
