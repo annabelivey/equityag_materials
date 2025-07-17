@@ -1,0 +1,28 @@
+{
+    "id": "3BC55600",
+    "path": null,
+    "project_path": null,
+    "type": "object_explorer",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1752555792211.0,
+    "source_on_save": false,
+    "relative_order": 9,
+    "properties": {
+        "id": "d0c31a45e12243c2a8bfbfb1eba0c189",
+        "name": "plot_oc_2020",
+        "title": "plot_oc_2020",
+        "language": "R",
+        "source_window_id": "",
+        "Source": "Source"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1752536189,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1752555792211,
+    "read_only": false,
+    "read_only_alternatives": []
+}
